@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Gas Portal</title>
+    <style>
+        body {
+            background-image: url('https://hpcladmin.hindustanpetroleum.com/img/UploadedFiles/HomeBanner/EnglishBanners/1bd5f92de3eb45f895681389504c6356.jpg'); /* Path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-container {
+            flex: 1 1 100%; /* Take full width on small screens, 50% width on larger screens */
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px; /* Add space between image and login box */
+        }
+        .form-container {
+            flex: 1 1 100%; /* Take full width on small screens, 50% width on larger screens */
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .forget-password {
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://images.sftcdn.net/images/t_app-icon-m/p/0afd9628-5eb2-4c68-a10d-c8c520f8d74a/1404026849/hp-gas-app-logo" alt="HP Gas Logo"> <!-- Path to your logo image -->
+        </div>
+        <div class="form-container">
+            <form action="https://my.hpcl.co.in/myhpcl/" method="post"> <!-- Replace the action with your desired login page -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required pattern="[0-9]{10}" title="Please enter a 10-digit mobile number">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" title="Password must be at least 8 characters long">
+                <input type="submit" value="Login">
+            </form>
+            <div class="forget-password">
+                <a href="#">Forget Password?</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">Day End</a></li>
+                    <li><a href="#">Punching</a></li>
+                    <li><a href="#">Cylinder Booking</a></li>
+                    <li><a href="#">Cancellation</a></li>
+                    <!-- Add more menu items as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
